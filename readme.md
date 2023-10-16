@@ -4,6 +4,8 @@
 >
 > This is a backport of the original package [dakujem/strata](https://github.com/dakujem/strata) for PHP 7.4 only.
 >
+> Note: Based on [`v1.0.0-beta`](https://github.com/dakujem/strata/releases/tag/1.0.0-beta) release of `dakujem/strata`.
+>
 
 
 # Strata
