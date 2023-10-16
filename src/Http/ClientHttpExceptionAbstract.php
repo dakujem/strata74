@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Dakujem\Strata\Http;
 
 use Dakujem\Strata\Contracts\IndicatesClientFault;
-use Dakujem\Strata\Support\SupportsContextStrata;
 use Dakujem\Strata\Support\SuggestsErrorMessage;
 use Dakujem\Strata\Support\SuggestsHttpStatus;
+use Dakujem\Strata\Support\SupportsContextStrata;
 use Dakujem\Strata\Support\SupportsPublicConveying;
 
 /**
@@ -23,11 +23,13 @@ abstract class ClientHttpExceptionAbstract extends \RuntimeException implements
     SuggestsHttpStatus,
     SuggestsErrorMessage
 {
-    use HttpExceptionBaseTrait;
+    use HttpClientContextStrata;
 
-    public function suggestStatusCode(): int
+    public static string $suggestedMessage = BadRequest::DefaultErrorMessage;
+
+    public function suggestErrorMessage(): string
     {
-        return 400; // 400 Bad Request
+        return static::$suggestedMessage;
     }
 
     /**
