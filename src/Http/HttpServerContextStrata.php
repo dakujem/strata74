@@ -49,5 +49,5 @@ trait HttpServerContextStrata
      * Gets the exception's internal message.
      * This method is natively implemented by exceptions and errors in PHP.
      */
-    abstract public function getMessage(): string;
+//    abstract public function getMessage();
 }
