@@ -20,7 +20,6 @@
       "Dakujem\\Strata\\": "src/"
     }
   },
-  "--not-yet--abandoned": "dakujem/strata",
   "extra": {
     "branch-alias": {
       "dev-trunk": "1.0.x-dev"
