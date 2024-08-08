@@ -19,10 +19,5 @@
     "psr-4": {
       "Dakujem\\Strata\\": "src/"
     }
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-trunk": "1.0.x-dev"
-    }
   }
 }
