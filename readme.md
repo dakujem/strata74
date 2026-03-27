@@ -303,7 +303,7 @@ class MySpecificException extends WhateverBaseException implements SupportsConte
 {
     use ContextStrata;
 
-    public function __construct($message = null, $code = 0, Throwable $previous = null)
+    public function __construct($message = null, $code = 0, ?Throwable $previous = null)
     {
         parent::__construct(
             $message ?? 'This is the default message for my specific exception.',
